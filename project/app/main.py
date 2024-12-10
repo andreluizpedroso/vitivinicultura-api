@@ -3,6 +3,12 @@ from fastapi import FastAPI
 from mangum import Mangum  # Importando o adaptador Mangum
 from .routers import producao, processamento, comercializacao, importacao, exportacao
 
+import sys
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logging.info(f"Versão do Python em execução: {sys.version}")
+
 app = FastAPI(
     title="API Vitivinicultura Embrapa",
     description="API para consultar dados de vitivinicultura do site da Embrapa",
