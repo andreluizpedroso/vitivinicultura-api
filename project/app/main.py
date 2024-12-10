@@ -9,6 +9,12 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Endpoint principal (raiz da API)
+@app.get("/")
+async def root():
+    return {"message": "API Vitivinicultura Embrapa funcionando na Vercel!"}
+
+# Incluindo os roteadores
 app.include_router(producao.router, prefix="/api/v1")
 app.include_router(processamento.router, prefix="/api/v1")
 app.include_router(comercializacao.router, prefix="/api/v1")
