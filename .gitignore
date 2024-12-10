@@ -7,4 +7,4 @@ __pycache__/
 *.csv
 *.jpg
 *.png
-
+.DS_Store
