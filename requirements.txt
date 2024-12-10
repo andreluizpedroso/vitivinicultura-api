@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+httpx  # para fazer requisições HTTP assíncronas ao site da Embrapa
+pydantic
+beautifulsoup4
