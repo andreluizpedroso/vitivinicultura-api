@@ -1,5 +1,7 @@
 fastapi
 uvicorn
-httpx  # para fazer requisições HTTP assíncronas ao site da Embrapa
+httpx
 pydantic
 beautifulsoup4
+mangum
+requests

@@ -1,5 +1,6 @@
 # app/main.py
 from fastapi import FastAPI
+from mangum import Mangum  # Importando o adaptador Mangum
 from .routers import producao, processamento, comercializacao, importacao, exportacao
 
 app = FastAPI(
@@ -13,3 +14,6 @@ app.include_router(processamento.router, prefix="/api/v1")
 app.include_router(comercializacao.router, prefix="/api/v1")
 app.include_router(importacao.router, prefix="/api/v1")
 app.include_router(exportacao.router, prefix="/api/v1")
+
+# Handler para o ambiente serverless
+handler = Mangum(app)
