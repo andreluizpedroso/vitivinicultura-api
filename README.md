@@ -51,7 +51,7 @@ A **Vitivinicultura API** é uma aplicação desenvolvida em Python utilizando o
    ```
 5. Rode o servidor localmente:
    ```bash
-   uvicorn app.main:app --reload
+   uvicorn project.app.main:app --reload
    ```
 6. Acesse a API:
    - **Swagger UI**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
