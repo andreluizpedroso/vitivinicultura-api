@@ -1,10 +1,10 @@
-# env/
-# __pycache__/
-# *.pyc
-# *.pyo
-# .vscode/
-# *.log
-# *.csv
-# *.jpg
-# *.png
+env/
+__pycache__/
+*.pyc
+*.pyo
+.vscode/
+*.log
+*.csv
+*.jpg
+*.png
 # .vercel
