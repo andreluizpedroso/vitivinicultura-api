@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from mangum import Mangum  # Importando o adaptador Mangum
+from mangum import Mangum 
 from .routers import producao, processamento, comercializacao, importacao, exportacao
 from fastapi.openapi.utils import get_openapi
 
@@ -63,7 +63,7 @@ app.openapi = custom_openapi
     description="Verifica se a API está operacional e retorna uma mensagem de boas-vindas."
 )
 async def root():
-    return {"message": "API Vitivinicultura Embrapa funcionando na Vercel!"}
+    return {"message": "API Vitivinicultura Embrapa funcionando!"}
 
 # Incluindo os roteadores
 app.include_router(producao.router, prefix="/api/v1", tags=["Produção"])
